@@ -52,6 +52,7 @@ body {
 /* <!-- Header --> */
 header {
     border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .main-header-flex {
     display: flex;
@@ -279,18 +280,19 @@ border-radius: 0px 0px 4px 4px;
     margin-top: 72px;
 }
 .customers-item {
-    border: 1px solid var(--customers-border);
-border-radius: 4px;
+ 
 }
 .customers-link {
     display: flex;
     padding: 16px 32px;
+    border: 1px solid var(--customers-border);
+    border-radius: 4px;
 }
 .customers-icon {
     fill: var(--customers-border);
 }
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
     border: 1px solid var(--pressed-state) ;
 }
 .customers-link:hover .customers-icon,
@@ -308,6 +310,9 @@ border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
 }
+.footer-box {
+    margin-left: 156px;
+}
 .logo-footer {
     display: flex;
     font-family: 'Raleway';
@@ -318,6 +323,7 @@ border-radius: 4px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     align-items: center;
+    margin-bottom: 16px;
 }
 .text-footer {
 width: 264px;
@@ -411,6 +417,7 @@ margin-bottom: 8px;
 }
 .link-menu {
     display: block;
+    outline: transparent;
 }
 .link-menu:hover,
 .link-menu:focus {
